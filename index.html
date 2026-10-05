@@ -19,6 +19,8 @@
     #loading p { margin: 0; font-size: 14px; color: #a0998c; }
     #bar { width: min(320px, 70vw); height: 6px; background: #26282c; border-radius: 3px; overflow: hidden; }
     #fill { height: 100%; width: 0; background: #c9a24a; transition: width .2s; }
+    #studio { position: fixed; left: 0; right: 0; bottom: max(28px, env(safe-area-inset-bottom)); text-align: center;
+      font-size: 12px; letter-spacing: 6px; color: #8c7a52; }
     #err { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 16px; background: #7a1a12; color: #fff; font-size: 14px; display: none; }
   </style>
 </head>
@@ -29,6 +31,7 @@
     <p>Chiến trường đang dàn quân…</p>
     <div id="bar"><div id="fill"></div></div>
     <p id="pct">0%</p>
+    <div id="studio">MINH DUNG PRODUCTION</div>
   </div>
   <div id="err"></div>
   <script>
@@ -39,7 +42,7 @@
       frameworkUrl: "Build/WebGL.framework.js.unityweb",
       codeUrl: "Build/WebGL.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
-      companyName: "Xiangqi3D Studio",
+      companyName: "Minh Dung Production",
       productName: "Xiangqi 3D Realistic",
       productVersion: "0.5.0",
       // Phones have 3x screens: rendering at 2x keeps it sharp without burning the GPU.
